@@ -9,7 +9,7 @@
         "storage"
     ],
     "host_permissions": [
-        "https://www.amazon.com/*"
+        "https://www.amazon.ca/*"
     ],
     "background": {
         "service_worker": "background.js"
@@ -17,7 +17,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.amazon.com/*"
+                "https://www.amazon.ca/*"
             ],
             "js": [
                 "content.js"
