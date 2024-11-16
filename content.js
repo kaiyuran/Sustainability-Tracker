@@ -7,7 +7,7 @@
                           document.querySelector('#bylineInfo')?.textContent.trim();
         return { productName, brandName };
     };
-
+    
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.type === 'GET_PRODUCT_DETAILS') {
             sendResponse(getProductDetails());
