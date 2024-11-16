@@ -1,6 +1,10 @@
 // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, 
 // without waiting for stylesheets, images, and subframes to finish loading.
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
+
 
     // The chrome.tabs.query method retrieves tabs that match the query parameters.
     // Here, we're querying for the active tab in the current window.
