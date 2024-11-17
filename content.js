@@ -1,5 +1,4 @@
 
-// Content script to extract product name and brand from Amazon product pages
 (() => {
     const getProductDetails = () => {
         const productName = document.getElementById('productTitle')?.textContent.trim();
