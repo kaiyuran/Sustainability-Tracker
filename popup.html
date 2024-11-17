@@ -1,21 +1,93 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sustainability Score</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 10px; }
-        #score { font-size: 1.5em; color: green; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9fafc;
+            color: #2c3e50;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #27ae60;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #productDetails {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #scores {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #scores p {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #34495e;
+        }
+
+        #companyScore {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 1.4em;
+        }
+
+        #reasons {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 1em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+
+        footer a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Sustainability Score</h1>
     <div id="productDetails">Fetching details...</div>
     <div id="scores">
-        <p>Company score: <span id="companyScore">Calculating...</span></p>
-        <p>Product score: <span id="productScore">Calculating...</span></p> 
+        <p>Brand score: <span id="companyScore">Calculating...</span></p>
+        <p>Reasons: <span id="reasons">Calculating...</span></p>
     </div>
-
+    <footer>
+        Donate today <a href="https://www.edf.org/" target="_blank">Environmental Defense Fund</a>
+    </footer>
     <script src="popup.js"></script>
 </body>
 </html>
+
