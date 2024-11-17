@@ -11,6 +11,7 @@
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.type === 'GET_PRODUCT_DETAILS') {
             sendResponse(getProductDetails());
+            console.log('sent response');
         }
     });
 })();

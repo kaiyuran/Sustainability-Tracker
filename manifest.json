@@ -1,35 +1,22 @@
 {
     "manifest_version": 3,
-    "name": "Sustainable Shopper",
+    "name": "Sustainability Score Extension",
     "version": "1.0",
-    "description": "Provides sustainability scores for products on Amazon.",
     "permissions": [
-        "activeTab",
-        "scripting",
-        "storage"
-    ],
-    "host_permissions": [
-        "https://www.amazon.ca/*"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://www.amazon.ca/*"
-            ],
-            "js": [
-                "content.js"
-            ]
-        }
+      "storage",
+      "activeTab",
+      "scripting"
     ],
     "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "icon16.png",
-            "48": "icon48.png",
-            "128": "icon128.png"
-        }
-    }
-}
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.amazon.com/*"],  
+        "js": ["content.js"]
+      }
+    ]
+  }
