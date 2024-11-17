@@ -5,12 +5,12 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
         const brandPrompt = `What is the environmental sustainability score of the brand ${brandName}? (percent)`;
 
         try {
-            const productResponse = await fetch('http://your-server-ip:5000/generate', { //Replace with your server's IP address and port. If deployed, use your deployment URL.
+            const productResponse = await fetch('http://0.0.0.0:5000/generate', { //Replace with your server's IP address and port. If deployed, use your deployment URL.
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ prompt: productPrompt })
             });
-            const brandResponse = await fetch('http://your-server-ip:5000/generate', {
+            const brandResponse = await fetch('http://0.0.0.0:5000/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ prompt: brandPrompt })
