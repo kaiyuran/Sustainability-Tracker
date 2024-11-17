@@ -4,19 +4,19 @@ function scores(brand) {
     let reasons = "";
     if (brand == "Visit the Amazon Renewed Store") {
         score = 8;
-        reasons = "Reasons: Renewable Energy Datacenters, Recycled Materials in products";
+        reasons = " Renewable Energy Datacenters, Recycled Materials in products";
     }
     else if (brand == "Brand        Intel") {
         score = 7;
-        reasons = "Reasons: Recycling initiatives, Net positive water usage in some countries";
+        reasons = " Recycling initiatives, Net positive water usage in some countries";
     }
     else if (brand == "Brand        CeraVe") {
         score = 2;
-        reasons = "Reasons: Plastic Packaging, Lack of plans to be more sustainable";
+        reasons = " Plastic Packaging, Lack of plans to be more sustainable";
     }
     else if (brand == "Brand        Oxford") {
         score = 5;
-        reasons = "Reasons: Recycling initiatives, Net positive water usage in some countries";
+        reasons = " Recycling initiatives, Net positive water usage in some countries";
     }
     return [score, reasons];
 }
